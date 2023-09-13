@@ -1,9 +1,27 @@
-# DDL-Generator-TG-Bot
-Telegram Bot that can create Userscloud and OneDrive direct download links - maybe more file hosts in the future..?
+# DirectDownloadLinkBot
 
-Setup:
+## Description
+This bot converts Userscloud, SharePoint, and personal OneDrive links into direct download links.
 
+## Requirements
+- Python (tested with version 3.8+)
 
-`pip install telebot requests`
+Install the necessary libraries:
+```pip3 install pyTelegramBotAPI requests```
 
-`python script_name.py`
+## Installation
+1. Clone the repository.
+2. Navigate to the directory containing the `DDL Generator.py` file.
+
+## Usage
+1. Replace the TOKEN in the file with your own, substituting the provided TOKEN placeholder.
+2. Start the bot using:
+```python3 DDL Generator.py```
+
+After launching, the bot awaits incoming messages. Upon receiving a supported link, it returns the direct download link.
+
+## Supported Link Types
+- Userscloud
+- SharePoint
+- Personal OneDrive links (Note the specific instructions in the bot for OneDrive links.)
+

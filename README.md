@@ -24,4 +24,6 @@ After launching, the bot awaits incoming messages. Upon receiving a supported li
 - Userscloud
 - SharePoint
 - Personal OneDrive links (Note the specific instructions in the bot for OneDrive links.)
+- Starfiles
+
 

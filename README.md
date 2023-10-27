@@ -1,7 +1,7 @@
 # DirectDownloadLinkBot
 
 ## Description
-This bot converts Userscloud, SharePoint, and personal OneDrive links into direct download links.
+This bot converts Userscloud, SharePoint, personal OneDrive and Starfiles links into direct download links.
 
 ## Requirements
 - Python (tested with version 3.8+)

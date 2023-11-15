@@ -27,9 +27,13 @@ def create_direct_download_link(link):
     elif "onedrive.live.com/embed" in link:
         return link.replace("/embed?", "/download?")
     elif "starfiles.co" in link:
-        file_id = link.split('/')[-1]
-        dll_link = f"https://download.starfiles.co/{file_id}"
-        return dll_link
+        file_id_match = re.search(r'/file/([^/]+)/', link)
+        if file_id_match:
+            file_id = file_id_match.group(1)
+            dll_link = f"https://download.starfiles.co/{file_id}"
+            return dll_link
+        else:
+            return "Invalid starfiles.co link"
     return "Unsupported link type"
 
 @bot.message_handler(commands=['start'])
